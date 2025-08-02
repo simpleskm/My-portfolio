@@ -16,4 +16,4 @@ This is a simple and clean **HTML5-based portfolio** that showcases personal and
 ```plaintext
 index.html
 README.md
-your-cv.pdf (optional for download link)
+Curriculum Vitae.doc (optional for download link)

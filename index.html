@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartstar Digital</title>
+</head>
+
+<style> body{
+    background : linear-gradient( aqua, lime, aqua); }
+    H1, i{font-size: 50px; font-family: 'arial black', Gadget,sans-serif; text-align: left;
+margin: 0 auto;}
+    H2{font-size: 30px;
+        border: 2px white solid;
+        padding: 10%;
+        margin: 12%;}
+        footer{background-color: yellow;
+        background-size: 8px 8px;
+        padding: 15px;
+        text-align: center;
+    }
+    h3{text-align: center}
+    section {
+      margin-bottom: 2em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    .project {
+      background: #f4f4f4;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-left: 5px solid #007acc;
+    }
+    a.button {
+      display: inline-block;
+      background: #007acc;
+      color: white;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1em;
+    }
+    form label {
+      display: block;
+      margin-top: 1em;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.2em;
+    }
+    form button {
+      margin-top: 1em;
+      padding: 0.6em 1.2em;
+      background: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #desktopMenu ul {
+  display: flex;             
+  justify-content: center;   
+  list-style: none;        
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+#desktopMenu ul li {
+  margin: 0 15px;            
+}
+
+#desktopMenu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 5px;
+}
+
+#desktopMenu ul li a:hover {
+  color: #0000aa;
+  border-bottom: 2px solid #0000aa;
+}
+@media (max-width: 768px) {
+  #desktopMenu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #desktopMenu ul li {
+    margin: 10px 0;
+  }
+}
+
+</style>
+<body>
+    <nav id="desktopmenu">
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Interests</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+
+    </nav>
+   <header>
+    <h1>📝 About Me</h1>
+    <p>Hi! I’m <strong>Simon Masila</strong>, a passionate web developer with a love for creating functional and beautiful web experiences.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="education">
+      <h2 id="education">🎓 Educational Background</h2>
+      <p>I hold a diploma in <strong>Teacher Education</strong> from <strong>Machakos University</strong>.</p>
+      <p><a href="Curriculum Vitae.doc" download>Download My CV</a></p>
+    </section>
+
+    <section aria-labelledby="interests">
+      <h2 id="interests">💡 Interests</h2>
+      <ul>
+        <li><strong>Web Development:</strong> Exploring modern frameworks and best practices.</li>
+        <li><strong>Tech Innovations:</strong> Keeping up with emerging trends in technology.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">🛠️ Projects</h2>
+      <article>
+        <h3>Project 1</h3>
+        <p>🐓 Poultry Farming Project – Machakos County<br>
+Welcome to my poultry farming project based in Kalama Subcounty, Machakos County. I currently manage a flock of around 100 birds, including both broilers and layers, raised for quality egg and meat production.
+
+As the project manager, I oversee all operations — from feeding and health management to daily care and sales. The goal is to support local food security, promote agribusiness in the community, and grow a sustainable farming enterprise.
+
+With a focus on hygiene, proper nutrition, and responsible farming practices, the project continues to expand and make a meaningful impact locally.</p>
+      </article>
+      <article>
+        <h3>Project 2</h3>
+        <p>🌐 Business Website Project<br>
+I successfully designed and developed a professional business cover page as the first step in establishing an online presence. The project focused on creating a clean, informative landing page that introduces the business, highlights key services, and provides easy contact access. I handled the layout, structure, and content using HTML5, ensuring it’s ready for future expansion.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">📬 Contact Me</h2>
+      <p>Feel free to reach out using the form below!</p>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        
+        <label for="name">Name:</label><br />
+        <input type="text" name="name" id="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" id="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea name="message" id="message" rows="5" required></textarea><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Simon Masila. All rights reserved.</p>
+  </footer>
